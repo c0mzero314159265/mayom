@@ -10,11 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::domain('{subdomain}-mayom.herokuapp.com')->group(function ($subdomain) {
     // show only demo version
     Route::get('/', 'SubDomainController@index', ['project' => $subdomain]);
 });
+*/
 
 Route::get('/', function () {
     return view('welcome');
