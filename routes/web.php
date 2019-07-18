@@ -11,7 +11,7 @@
 |
 */
 
-Route::domain('{subdomain}.localhost')->group(function ($subdomain) {
+Route::domain('{subdomain}-mayom.herokuapp.com')->group(function ($subdomain) {
     // show only demo version
     Route::get('/', 'SubDomainController@index', ['project' => $subdomain]);
 });
